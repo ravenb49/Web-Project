@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<title>FINALS PROJECT</title>
+ <link rel="stylesheet" href="finals-02.css">
+</head>
+
+<body class="login-active">
+
+<div class="login-container" style="display:flex;">
+  <div class="login-card">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Submit</button>
+  </div>
+</div>
+
+
+<div class="whole">
+  <div class="sidePanel">
+    <h3>Quick Access</h3>
+    <a href="#" onclick="showForm()">User Form</a>
+    <a href="#" onclick="showLogin()">Login</a>
+    <a href="#" id="contact">Contact</a>
+    <a href="#" id="aboutLink">About</a>
+    <a href="#" onclick="exitPage()">Exit</a>
+  </div>
+
+  <div class="saved">
+    <h3>Fill the Information</h3>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="middleName" placeholder="Middle Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="number" id="age" placeholder="Age">
+    <button onclick="saveUser()">Save</button>
+  </div>
+
+  <div class="saved-persons-data">
+    <h3>Saved Persons Data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>First</th>
+          <th>Middle</th>
+          <th>Last</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="exit-page">
+  <h1>Thank you for visiting!</h1>
+  <button onclick="goBack()">Go Back to Login</button>
+</div>
+
+
+<script src="finals-02.js"></script>
+</body>
+</html>
