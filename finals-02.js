@@ -11,20 +11,13 @@ function login(){
   let user = $('#username').val();
   let pass = $('#password').val();
 
-    if(!user||!pass){
-    Swal.fire({
-      icon:'error',
-      title:'Login failed',
-      text:'Please fill the blank space!'
-    });
-    return;
-    }
+  
 
-  if(user !== "raven" || pass !== "1234"){
+  if(!user || !pass){
     Swal.fire({
       icon:'error',
       title:'Login failed',
-      text:'Incorrect username or password!'
+      text:'You must Put your username and password'
     });
   }else{
     hideAll();
